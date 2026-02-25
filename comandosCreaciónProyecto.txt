@@ -15,3 +15,4 @@
 5-Se instalaron dependencias
     npm install react-router-dom
     npm install sweetalert2
+    npm install html-to-image
