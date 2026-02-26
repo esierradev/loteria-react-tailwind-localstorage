@@ -14,7 +14,7 @@ export const downloadComponentAsImage = async (ref, fileName = 'ticket-lote.png'
         // Configuraciones para mejorar la calidad y compatibilidad
         const options = {
             cacheBust: true,
-            backgroundColor: '#1a1a1a', // Fondo para evitar transparencias no deseadas
+            // backgroundColor: '#1a1a1a', // Fondo para evitar transparencias no deseadas
             pixelRatio: 2, // Aumenta la resolución (mejor para WhatsApp)
         };
 

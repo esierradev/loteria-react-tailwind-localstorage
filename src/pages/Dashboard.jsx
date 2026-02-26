@@ -88,11 +88,11 @@ function Dashboard({ setIsAuthenticated }) {
         <>
             {/* TABLERO OCULTO PARA IMAGEN */}
             <div style={{ position: 'absolute', left: '-9999px', top: '0' }} >
-                <div ref={ticketRef} className="bg-amber-400 p-4 rounded-lg">
+                <div ref={ticketRef} className="bg-green-600 p-4 rounded-lg">
                     <div className="text-center">
-                        <div className="text-xl font-bold">DINÁMICAS A&L</div>
-                        <div className="text-lg">JUEGA Y GANA</div>
-                        <div className="text-md">Premio: ${premio}</div>
+                        <div className="text-xl font-bold text-red-600">DINÁMICAS A&L</div>
+                        <div className="text-sm text-white">JUEGA Y GANA</div>
+                        <div className="text-xl text-yellow-300 font-bold my-1">Premio: ${premio}</div>
                         <div className="text-md">Valor: ${valor}</div>
                         <div className="text-md">
                             Fecha: {formatearFechaVisual(fecha)}
@@ -102,7 +102,7 @@ function Dashboard({ setIsAuthenticated }) {
                         {numeros.map((num) => (
                             <div
                                 key={num}
-                                className={`border p-1 text-center text-sm ${seleccionado.includes(num) ? 'bg-green-500 text-white' : 'bg-gray-100'
+                                className={`rounded-sm border p-1 text-center text-sm ${seleccionado.includes(num) ? 'bg-red-500 text-white' : 'bg-green-800'
                                     }`}
                             >
                                 {num.toString().padStart(2, '0')}
